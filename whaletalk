@@ -1,0 +1,25 @@
+// Create your Whale Talk program below:
+//1
+var input = "Great job!"
+
+//2
+var output = ""
+
+//3, 4, 5, 6, 7, 8, 9
+for char in input {
+  let lowerChar = char.lowercased()
+  switch lowerChar {
+    case "a", "i", "o":
+      output += lowerChar.uppercased()
+    case "e":
+      output += "EE"
+    case "u":
+      output += "UU"
+    default:
+      continue
+  }
+}
+
+//11
+print(output)
+
